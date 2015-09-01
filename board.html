@@ -1,0 +1,76 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+		<title>4chan Catalog</title>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.animate-colors.min.js"></script>
+		<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+		<script type="text/javascript" src="js/board.js"></script>
+		<script type="text/javascript" src="js/board_list.js"></script>
+		<link rel="stylesheet" href="css/style.css" type="text/css" id="skin" />
+		<link rel="stylesheet" href="css/jquery.qtip.min.css" type="text/css" />
+		<!-- <link rel="stylesheet" id="boardTheme" href="css/Yotsuba.css" type="text/css" /> !-->
+	</head>
+	<body>
+		<div class="mainContent" align="center">
+			<h3 id="slogan"></h3>
+			<table id="catop">
+				<tr>
+					<td width="10%" valign="bottom">
+						<a class="button" style="margin-left: 10px;" href="#" id="refreshButton">Refresh</a>
+						<!-- <a class="button" style="margin-left: 10px;" href="#" id="alertTest">Alert Test</a> !-->
+					</td>
+					<!-- <td width="80%" valign="top" align="center"><a class="button" href="home.html" style="font-size: 13pt">&larr; Return to board list</div></td> !-->
+					<td width="80%" valign="top" align="center" id="board_list_sm"><img src="img/loading.gif" /><br /><br />Downloading board list from api.4chan.org...</td>
+					<td width="10%" valign="bottom" align="right"><a class="button" style="margin-right: 10px;" href="#" id="optionsButton">Options</a></td>
+				<tr>
+			</table>
+			<div id="sticky_list" style="display:none;"></div>
+			<div id="thread_list">
+				<img src="img/loading.gif" /><br /><br />Loading board catalog...
+			</div>
+			<div id="footerText"></div>
+		</div>
+		<div id="theme" class="panel" style="top: 30px; display: none;">
+			<h3>Settings</h3>
+			<h4 style="padding-bottom: 4px;">Options</h4>
+			<ul id="theme-set" class="clickset">
+				<li><span id="theme-magnify" class="button clickbox left"></span> — Magnify small thumbnails.</li>
+				<li><span id="theme-nobinds" class="button clickbox left"></span> — Disable keybinds.</li>
+				<li><span id="theme-nospoiler" class="button clickbox left"></span> — Don't spoiler images.</li>
+				<li><span id="theme-replies" class="button clickbox left"></span> — Always show last replies in tooltips.</li>
+				<li><span id="theme-stickies" class="button clickbox left"></span> — Always keep stickies on top.</li>
+				<li><span id="theme-autogif" class="button clickbox left"></span> — Animate GIF thumbnails</li>
+				<li><span id="theme-autowebm" class="button clickbox left"></span> — Animate WebM thumbnails</li>
+				<!-- <li><span id="theme-dangerzone" class="button clickbox left"></span> — Anime GIF and WebM on /gif/ and /wsg/</li> !-->
+				<li><span id="theme-resamplewebm" class="button clickbox left"></span> — Resample WebM movies (Smoothing)</li>
+				<li><span id="theme-archives" class="button clickbox left"></span> — Resolve dead post archive links.</li>
+				<li><span id="theme-linkifier" class="button clickbox left"></span> — Resolve URLs in text</li>
+			</ul>
+			<h4>Shortcuts</h4>
+			<ul class="clickset">
+				<li><kbd>R</kbd> — Refresh current page.</li>
+				<li><kbd>X</kbd> — Reorder threads.</li>
+				<li><kbd>T</kbd> — Show/Hide pinned threads.</li>
+				<li><kbd>S</kbd> — Open search box.
+					<ul>
+						<li><kbd>Esc</kbd> — Close search box.</li>
+						<li><kbd>Tab</kbd> — Toggle full thread search.</li>
+					</ul>
+				</li>
+				<li><kbd>Ctrl</kbd> + hover thumbnail — Show last replies in tooltips.</li>
+				<li><kbd>Shift</kbd> + <kbd data-tip="Left Mouse Button click">LMB</kbd> on thumbnail — Hide thread.</li>
+				<li><kbd>Alt</kbd> + <kbd data-tip="Left Mouse Button click">LMB</kbd> on thumbnail — Pin thread.</li>
+			</ul>
+			<h4>Custom Menu</h4>
+			<div>Limit the main menu to the following boards</div>
+			<input placeholder="example: jp tg mu" class="settings-field" type="text" id="theme-menu">
+			<hr>
+			<span class="right">
+				<span id="theme-msg" class="msg-ok" style="display: none;">Done</span>
+				<span id="theme-save" class="button">Save</span>
+				<span id="theme-close" class="button">Close</span>
+			</span>
+		</div>
+	</body>
+</html>

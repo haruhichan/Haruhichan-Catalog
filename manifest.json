@@ -1,0 +1,37 @@
+{
+	"name": "Haruhichan Catalog",
+	"version": "2.0",
+	"manifest_version": 2,
+	"description": "Browse 4chan in style!",
+	"homepage_url": "http://haruhichan.com",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "Haruhichan Catalog"
+	},
+	"icons": {
+		"16": "img/appicon/16.png",
+		"32": "img/appicon/32.jpg",
+		"48": "img/appicon/48.jpg",
+		"128": "img/appicon/128.jpg"
+	},
+	"permissions": [
+		"contentSettings",
+		"idle",
+		"tabs",
+		"storage",
+		"http://a.4cdn.org/*",
+		"http://s.4cdn.org/*",
+		"https://a.4cdn.org/*",
+		"https://s.4cdn.org/*",
+		"http://static.4chan.org/*",
+		"https://static.4chan.org/*"
+	],
+	"web_accessible_resources" : [
+		"icon.png",
+		"json/archives.json"
+	],
+	"background": {
+		"page": "pageListener.html"
+	},
+	"offline_enabled": false
+}

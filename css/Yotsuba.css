@@ -1,0 +1,46 @@
+body {
+	background: #FFFFEE url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADICAIAAACmkByiAAAAWElEQVR4AaWSwQ3AIAwDbfbfpdt0nKrPUp3QCfHgkfjsCMh47mskmU5HGvbmuuh9dVce8M4it/SfMZglGeZx/ccyu/Vsv4/N29f331AY5Bi3+hdo4A92+wXvCwR9mXztrAAAAABJRU5ErkJggg==) top center repeat-x;
+}
+
+#slogan {
+	color: #800000;
+}
+
+.teaser {
+	color: #800000;
+}
+
+.teaser .quote {
+	color: #789922;
+}
+
+.teaser .quotelink {
+	color: #000080;
+	border-bottom: 1px dotted #000080;
+	text-shadow: 0 0 0;
+}
+
+.teaser .archivelink {
+	color: #000080;
+	border-bottom: 1px dotted #000080;
+	text-shadow: 0 0 0;
+}
+
+.thread .subject {
+	color: #117743;
+	text-shadow: 0 0 0;
+}
+
+.thread .limited u {
+	color: rgb(230, 33, 33);
+	text-shadow: 0 0 0;
+}
+
+.bumplimit .thumb {
+	border-color: rgb(219, 39, 39);
+}
+
+.panel {
+	background: #F0E0D6;
+	color: #444;
+}
