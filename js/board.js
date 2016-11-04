@@ -498,7 +498,7 @@
 			if(typeof(p.country) != 'undefined' && p.country.length > 0) {
 				if(Board.current == 'pol') {
 					article
-						.append($("<div>", {class: 'flagimg'}).append($("<img>", {src: 'https://s.4cdn.org/image/country/troll/' + p.country.toLowerCase() + '.gif', alt: 'Flag'})));
+						.append($("<div>", {class: 'flagimg'}).append($("<span>", {class: 'flag flag-' + p.country, alt: 'Flag'})));
 				} else {
 					article
 						.append($("<div>", {class: 'flagimg'}).append($("<img>", {src: 'https://s.4cdn.org/image/country/' + p.country.toLowerCase() + '.gif', alt: 'Flag'})));
